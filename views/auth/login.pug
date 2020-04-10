@@ -1,0 +1,16 @@
+extends ../layout
+block content
+
+	if errows
+		each errow in errows
+			.alert.alert-danger=errow
+
+
+	form(method="POST" )
+		div.form-group.d-flex.m-4
+			label(for="email" ) Email    
+			input(type="email" id="Email" class="form-control" name="email" value = values ? values.email : "")
+		div.form-group.d-flex.m-4
+			label(for="password") Password
+			input(type="password" id="password" class="form-control" name="password" values ? values.password : "")
+		button.btn.btn-primary.m-3 Login
