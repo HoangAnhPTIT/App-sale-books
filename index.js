@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 
 const signinRoute = require('./routes/auth.route')
+const articleRoute = require('./routes/article.route')
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
@@ -16,7 +17,7 @@ app.get('/', (req, res) =>{
 })
 
 app.use('/auth',signinRoute)
-
+app.use('/article', articleRoute)
 
 
 

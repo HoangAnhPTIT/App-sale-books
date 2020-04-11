@@ -1,0 +1,11 @@
+extends ../layout
+block content
+
+	form(method="POST")
+		.formgroup
+			label(for="name") Name
+			input(type="text" id="name" name="name")
+		.formgroup.d-flex
+			label(for="text") Content
+			input(type="text" id="text" name="content" class="form-control")
+		button.btn.btn-primary.mt-3 Submit

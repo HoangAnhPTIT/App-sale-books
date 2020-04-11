@@ -4,5 +4,22 @@
       "email": "hoanganh244@gmail.com",
       "password": "123456"
     }
+  ],
+  "article": [
+    {
+      "name": "Test",
+      "content": "Testingggg",
+      "id": "D6kVdO-uS"
+    },
+    {
+      "name": "Fisrt blog",
+      "content": "You can also invert the colors—with light text on dark backgrounds—with .table-dark.",
+      "id": "OYv6MkZtq"
+    },
+    {
+      "name": "Holahola",
+      "content": "Hihihi",
+      "id": "arO6CZCmV"
+    }
   ]
 }

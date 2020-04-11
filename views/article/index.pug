@@ -1,0 +1,12 @@
+extends ../layout 
+block content
+	h2.m-4 List Article
+	table.table
+		tr
+			th Name
+			th Detail
+		each article in articles
+			tr
+				td=article.name
+				td
+					a(href='/article/' + article.id) View
